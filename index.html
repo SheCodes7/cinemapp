@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Handlee|ABeeZee" rel="stylesheet">
+<script src="https://use.fontawesome.com/89c7ab3ed1.js"></script>
+<title>Cinema</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+<div class="upper-nav">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+	   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+       </button>
+        <span class="navbar-brand logo"><img src="logo.png"></span>
+      </div>
+	  <div class="collapse navbar-collapse" id="topNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Cinemas
+        <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		  <li><a href="http://www.cinema-city.co.il/" target="_blank">Cinema City</a></li>
+		  <li><a href="http://www.yesplanet.co.il/" target="_blank">Yes Planet</a></li>
+		  <li><a href="http://www.rav-hen.co.il/" target="_blank">Rav Hen</a></li>
+		  <li><a href="http://www.cinema.co.il/" target="_blank">Cinematek</a></li>
+		  <li><a href="https://globusmax.co.il/" target="_blank">Globus Max</a></li>
+		</ul>
+	    </li>
+		<li><a href="#top">Hottest 5</a></li>
+		<li><a href="#center">New Films</a></li>
+		<li><a href="#footer">Contact Us</a></li>
+	  </ul>
+     </div>
+	</div>
+  </nav>
+</div>
+
+<div class="container">
+  <div id="top" class="container-fluid">
+    <h1 id="top5"><b>Hottest 5</b></h1>
+    <div id="movieCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#movieCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#movieCarousel" data-slide-to="1"></li>
+        <li data-target="#movieCarousel" data-slide-to="2"></li>
+	    <li data-target="#movieCarousel" data-slide-to="3"></li>
+	    <li data-target="#movieCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="GuardsOfGal.jpg">
+        </div>
+
+        <div class="item">
+          <img src="FastNFurious.png">
+        </div>
+	  
+	    <div class="item">
+          <img src="zookeeper.jpg">
+        </div>
+
+	    <div class="item">
+          <img src="goingInStyle.jpg">
+        </div>
+
+	    <div class="item">
+          <img src="GetOut.jpeg">
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#movieCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#movieCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+  </div>
+  </div>
+ 
+  <div id="center" class="container-fluid">
+    <div id="panels">
+      <h2>New Films</h2>
+      <div class="panel panel-default" id="1">
+        <div class="panel-body">Beauty and the Beast</div>
+      </div>
+      <div class="panel panel-default" id="2">
+        <div class="panel-body">3 Generations</div>
+      </div>
+      <div class="panel panel-default" id="3">
+        <div class="panel-body">Unlocked</div>
+      </div>
+      <div class="panel panel-default" id="4">
+        <div class="panel-body">The Boss Baby</div>
+      </div>
+    </div>
+  
+    <div id="image">
+      <img src="http://placehold.it/300x320" id="img" class="img-responsive">
+    </div>
+  </div>
+  
+  <footer id="footer" class="container-fluid">
+	<h2>Contact Us:</h2>
+	<p><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>  CineMapp</p>
+	<p><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>  @CineMapp</p>
+	<p><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>  cinemapp@fake.com</p>
+	<p><i class="fa fa-phone fa-2x" aria-hidden="true"></i> +972-50-1234567</p>
+  </footer>
+  
+</div>
+</body>
+
+</hmtl>
